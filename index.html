@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Frontend Mentor | Social links profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme:{
+        extend:{
+          colors:{
+            "darkGray": "hsl(0, 0%, 12%)",
+            "offBlack": "hsl(0, 0%, 8%)",
+            "gray": "hsl(0, 0%, 20%)",
+            "green": "hsl(75, 94%, 57%)",
+          },
+          fontFamily:{
+            "inter": ["Inter", "sans-serif"]
+          },
+          screens:{
+            "phone": {"max": "400px"},
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-offBlack h-screen flex justify-center items-center">
+  <main class="bg-darkGray text-white text-sm font-inter rounded-md">
+    <article class="mt-8 mx-14 mb-0 phone:mx-7 flex flex-col items-center">
+      <figure class="my-3">
+        <img src="./assets/images/avatar-jessica.jpeg" class="rounded-full w-20">
+      </figure>
+      <h1 class="text-2xl font-bold mt-2">Jessica Randall</h1>
+      <h2 class="text-green font-semibold mb-6">London, United Kingdom</h2>
+      <p class="text-sm">"Front-end developer and avid reader."</p>
+    </article>
+    <section class="font-semibold mx-6 mt-6 mb-9 flex flex-col space-y-4">
+      <section class="bg-gray text-center p-2.5 rounded-md cursor-pointer hover:bg-green transistion hover:text-black transition">Github</section>
+      <section class="bg-gray text-center p-2.5 rounded-md cursor-pointer hover:bg-green transistion hover:text-black transition">Frontend Mentor</section>
+      <section class="bg-gray text-center p-2.5 rounded-md cursor-pointer hover:bg-green transistion hover:text-black transition">LinkedIn</section>
+      <section class="bg-gray text-center p-2.5 rounded-md cursor-pointer hover:bg-green transistion hover:text-black transition">Twitter</section>
+      <section class="bg-gray text-center p-2.5 rounded-md cursor-pointer hover:bg-green transistion hover:text-black transition">Instagram</section>
+    </section>
+  </main>
+  <footer class="text-xs text-center absolute bottom-0 w-full text-white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-green">Frontend Mentor</a>. 
+    Coded by <a href="#" class="text-green">Lyle Patterson</a>.
+  </footer>
+</body>
+</html>
